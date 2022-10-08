@@ -1,0 +1,139 @@
+.connectNetwork {
+  .button {
+    display: flex;
+    align-items: center;
+    padding: var(--space-2x) var(--space-6x);
+    color: var(--blue-600);
+    border: 2px solid var(--blue-600);
+    border-radius: var(--space-1x);
+    background-color: var(--white);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    height: 40px;
+    &:hover {
+      color: var(--blue-800);
+      border-color: var(--blue-800);
+      background-color: var(--blue-100);
+    }
+    img {
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      margin-right: var(--space-2x);
+    }
+  }
+  .avatar {
+    width: 24px;
+    height: 24px;
+    min-width: 26px;
+    margin-right: var(--space-2x);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAS9JREFUaEPtWLsNwkAMvetYgC0oqUB09Eh0TIBEQ8MY1KxAlyUiUVGyBQvQQXMpkO7hvMQhBD3K4PjyPnFsx/tq/wyZ3+ZyzV2G13bFhIo/rW9U/Hk2zcZHAUi8SAHDULKQ9cYNxkLoQRfHkYXx7f/y8MjGo+rkZiEBSLxLgUQE/SGThbwtVJTbbC9ElZQQglcVYs+NApAokwKsd6oqJAv1baHleJ6tQqj3aKh069vQhBgFoDW39RJIgXo8dRf1vwqgtQrq1xHH7J6HHUHRlx620wJgvA5SwJrIZKG+LYTOR/WY7Z288sAqJACGhaSAVYVkoW9ZyGsm7q4P/ZzZbS8kAA0ZkAINiXO7bfgKsBMZmozY7pXN4zaRsQcjr7B5BKBikmVOChjLY3or8WsKvAC3e3d27f4IIgAAAABJRU5ErkJggg==);
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .label {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 0.875rem;
+      line-height: 1rem;
+    }
+  }
+  .contentContainer {
+    padding: 0px;
+    width: 294px;
+    .content {
+      .user {
+        padding: var(--space-4x);
+        background-color: var(--gray-100);
+        margin: var(--space-4x);
+        .wallet {
+          display: flex;
+          align-items: center;
+          margin-bottom: var(--space-2x);
+          color: var(--blue-800);
+          span {
+            font-size: 0.75rem;
+          }
+          img {
+            width: 16px;
+            height: 16px;
+            margin: var(--space-2x);
+          }
+        }
+        .address {
+          display: flex;
+          align-items: center;
+          a,
+          a:visited,
+          a:hover {
+            color: var(--blue-600);
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.875rem;
+          }
+          .copyIcon {
+            display: block;
+            margin-left: var(--space-2x);
+            cursor: pointer;
+            background-image: url(../../../resources/icons/copy.svg);
+            background-size: cover;
+            height: 16px;
+            width: 16px;
+            &.copied {
+              background-image: url(../../../resources/icons/check_circle_chainlink_gray.svg);
+            }
+          }
+        }
+      }
+      .blance {
+        border-top: 1px solid #e7e8ea;
+        padding: 16px;
+        display: flex;
+        justify-items: center;
+        img {
+          width: 48px;
+          height: 48px;
+        }
+        .tokenInfo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .tokenName {
+            display: block;
+            margin-left: var(--space-4x);
+            font-size: 0.875rem;
+            line-height: 1.5;
+            color: var(--gray-600);
+          }
+          .tokenValue {
+            display: block;
+            font-weight: var(--font-weight-normal);
+            margin-left: var(--space-4x);
+            color: var(--gray-900);
+            font-size: 1rem;
+            line-height: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .connectNetwork {
+    padding: var(--space-2x);
+    .label {
+      span {
+        display: none;
+      }
+    }
+    .content {
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: var(--space-2x);
+      }
+    }
+  }
+}

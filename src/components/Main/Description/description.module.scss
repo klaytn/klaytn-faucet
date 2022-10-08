@@ -1,0 +1,24 @@
+.description {
+  margin-top: var(--space-12x);
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin: var(--space-0x);
+    margin-bottom: var(--space-6x);
+    color: var(--blue-800);
+    letter-spacing: -.05rem;
+  }
+  p {
+    max-width: 640px;
+    margin-bottom: 0;
+    color: var(--gray-700);
+    font-size: 1rem;
+    line-height: 1.5;
+    a,
+    a:hover,
+    a:visited {
+      color: var(--blue-600);
+      text-decoration: none;
+    }
+  }
+}

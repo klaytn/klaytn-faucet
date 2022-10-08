@@ -1,0 +1,40 @@
+.modal {
+  .modalContent {
+    width: 560px;
+    .title {
+      margin: var(--space-0x) var(--space-0x) var(--space-6x);
+      font-size: 1.75rem;
+      color: var(--blue-800);
+    }
+    .list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      grid-gap: var(--space-8x);
+      gap: var(--space-8x);
+      margin: var(--space-0x);
+      padding: var(--space-0x);
+      li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-6x);
+        background-color: var(--blue-100);
+        color: var(--blue-600);
+        font-size: 1rem;
+        font-weight: var(--font-weight-normal);
+        grid-gap: 10px;
+        gap: 10px;
+        width: 100%;
+        margin: var(--space-0x);
+        cursor: pointer;
+        img{
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}

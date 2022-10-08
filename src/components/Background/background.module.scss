@@ -1,0 +1,92 @@
+.background {
+  margin: var(--space-0x);
+  position: absolute;
+  overflow: hidden;
+  width: 90vw;
+  height: 100vh;
+  z-index: -999;
+  .bg_level_1 {
+    max-width: 1440px;
+    margin: var(--space-0x) auto;
+    padding-left: var(--space-6x);
+    padding-right: var(--space-6x);
+    position: relative;
+  }
+  .bg_level_2 {
+    margin: var(--space-0x);
+    position: absolute;
+    top: -1180px;
+    right: -156px;
+    z-index: -1;
+  }
+  .bg_level_3 {
+    margin: var(--space-0x);
+    background-color: transparent;
+    position: relative;
+    height: 1870px;
+    width: 1870px;
+    mix-blend-mode: screen;
+  }
+  .bg_level_4 {
+    margin: var(--space-0x);
+    transform: rotateX(236deg) rotateZ(-135deg);
+    width: 1100px;
+    height: 1100px;
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 44.5%;
+    left: 20%;
+    & > div {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      border-radius: 17px;
+      background-color: rgb(245, 247, 253);
+      &.bg_item_1 {
+        margin: var(--space-0x);
+      }
+      &.bg_item_2{
+        margin: var(--space-0x);
+        transform: translateZ(-1100px);
+      }
+      &.bg_item_3{
+        margin: var(--space-0x);
+        transform: rotateY(-90deg);
+        transform-origin: right center;
+      }
+      &.bg_item_4{
+        margin: var(--space-0x);
+        transform: rotateX(-90deg);
+        transform-origin: center top;
+      }
+      &.bg_item_5{
+        margin: var(--space-0x);
+        transform: rotateY(90deg);
+        transform-origin: left center;
+      }
+      &.bg_item_6{
+        margin: var(--space-0x);
+        transform: rotateX(90deg);
+        transform-origin: center bottom;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .background {
+    .bg_level_1 {
+      padding-left: var(--space-16x);
+      padding-right: var(--space-16x);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .background {
+    .bg_level_1 {
+      padding-left: var(--space-8x);
+      padding-right: var(--space-8x);
+    }
+  }
+}

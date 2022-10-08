@@ -1,0 +1,152 @@
+:root {
+  --blue-100: #f5f7fd;
+  --blue-200: #dfe7fb;
+  --blue-300: #abbde9;
+  --blue-400: #8ca5e1;
+  --blue-500: #4771d1;
+  --blue-600: #375bd2;
+  --blue-700: #0043c3;
+  --blue-800: #1a2b6b;
+  --blue-900: #021642;
+  --gray-100: #fafafb;
+  --gray-200: #ecedef;
+  --gray-300: #ced0d5;
+  --gray-400: #b7bac0;
+  --gray-500: #858a95;
+  --gray-600: #6d7380;
+  --gray-700: #555c6c;
+  --gray-800: #252e42;
+  --gray-900: #0c162c;
+  --green-100: #f4fcf8;
+  --green-200: #d6f4e6;
+  --green-300: #56d096;
+  --green-400: #2fb96c;
+  --green-500: #1d804c;
+  --green-600: #176b3f;
+  --green-700: #115431;
+  --green-800: #083b22;
+  --green-900: #042013;
+  --white: #fff;
+  --black: #000;
+  --black-003: #00000005;
+  --black-005: #0005;
+  --black-008: #0008;
+  --orange-100: #fff5f0;
+  --orange-200: #fee9e0;
+  --orange-300: #f8a077;
+  --orange-400: #e56f3e;
+  --orange-500: #bf4f20;
+  --orange-600: #9f421a;
+  --orange-700: #7f3514;
+  --orange-800: #50210c;
+  --orange-900: #2d1306;
+  --purple-100: #f9f6fe;
+  --purple-200: #f1ecfa;
+  --purple-300: #c5b5eb;
+  --purple-400: #a78ee1;
+  --purple-500: #8260d5;
+  --purple-600: #6c4fb6;
+  --purple-700: #563f90;
+  --purple-800: #37285d;
+  --purple-900: #211939;
+  --red-100: #fff8f8;
+  --red-200: #fde9e9;
+  --red-300: #fd9b9d;
+  --red-400: #f65152;
+  --red-500: #de2624;
+  --red-600: #ba201d;
+  --red-700: #961817;
+  --red-800: #590d0d;
+  --red-900: #3a0808;
+  --yellow-100: #fffde6;
+  --yellow-200: #fcf9c0;
+  --yellow-300: #f2d051;
+  --yellow-400: #dcb74a;
+  --yellow-500: #a78536;
+  --yellow-600: #8d6c2d;
+  --yellow-700: #5e451d;
+  --yellow-800: #3b2812;
+  --yellow-900: #211608;
+  --font-family-text: "circular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-family-code: "fira code", "Courier New", monospace, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --space-0x: 0px;
+  --space-1x: 4px;
+  --space-2x: 8px;
+  --space-3x: 12px;
+  --space-4x: 16px;
+  --space-5x: 20px;
+  --space-6x: 24px;
+  --space-8x: 32px;
+  --space-10x: 40px;
+  --space-12x: 48px;
+  --space-16x: 64px;
+  --space-20x: 80px;
+  --space-24x: 96px;
+  --container-margin: var(--space-6x);
+}
+body {
+  margin: 0;
+  font-family: var(--font-family-text);
+}
+* {
+  font-family: var(--font-family-text);
+}
+@font-face {
+  font-family: circular;
+  src: url(./resources/fonts/circular-book.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: circular;
+  src: url(./resources/fonts/circular-medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: circular;
+  src: url(./resources/fonts/circular-bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: fira code;
+  src: url(https://fonts.googleapis.com/css2?family=Fira+Code);
+  font-weight: var(--font-weight-normal);
+  font-style: normal;
+  font-display: swap;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: var(--container-margin);
+  margin-right: var(--container-margin);
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --container-margin: var(--space-8x);
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: min(
+      calc(1440px - 2 * var(--space-16x)),
+      calc(100% - 2 * var(--space-16x))
+    );
+  }
+  :root {
+    --container-margin: auto;
+  }
+}

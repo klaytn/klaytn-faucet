@@ -1,0 +1,45 @@
+.connectWallet {
+  text-align: center;
+  img {
+    width: 224px;
+    height: 224px;
+  }
+  h4 {
+    margin: auto;
+    margin-top: var(--space-6x);
+    margin-bottom: var(--space-4x);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: var(--font-weight-medium);
+    color: var(--blue-800);
+  }
+  p {
+    margin: auto;
+    margin-bottom: var(--space-6x);
+    color: var(--blue-600);
+    max-width: 640px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    padding: var(--space-2x) var(--space-6x);
+    color: var(--white);
+    border: 2px solid var(--blue-600);
+    border-radius: var(--space-1x);
+    background-color: var(--blue-600);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    height: 40px;
+    margin: auto;
+    margin-bottom: var(--space-6x);
+    line-height: 1;
+    font-size: 0.875rem;
+    &:hover {
+      color: var(--white);
+      border-color: var(--blue-800);
+      background-color: var(--blue-800);
+    }
+  }
+}

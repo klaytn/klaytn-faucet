@@ -1,0 +1,42 @@
+.requestNetwork {
+  text-align: center;
+  image {
+    width: 224px;
+    height: 224px;
+  }
+  h4 {
+    margin: auto;
+    margin-top: var(--space-6x);
+    margin-bottom: var(--space-4x);
+    font-size: 24px;
+    font-weight: var(--font-weight-medium);
+    color: var(--blue-800);
+    margin: auto;
+    margin-bottom: var(--space-4x);
+  }
+  p {
+    margin: auto;
+    margin-bottom: var(--space-8x);
+    color: var(--gray-600);
+    max-width: 640px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    padding: var(--space-2x) var(--space-6x);
+    color: var(--white);
+    border: 2px solid var(--blue-600);
+    border-radius: var(--space-1x);
+    background-color: var(--blue-600);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    height: 40px;
+    margin: auto;
+    margin-bottom: var(--space-6x);
+    &:hover {
+      color: var(--white);
+      border-color: var(--blue-800);
+      background-color: var(--blue-800);
+    }
+  }
+}

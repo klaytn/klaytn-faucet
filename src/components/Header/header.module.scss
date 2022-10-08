@@ -1,0 +1,29 @@
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  box-shadow: 0px 0px 5px var(--black-003);
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-6x) var(--space-0x);
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.25rem;
+      color: var(--blue-600);
+      font-weight: var(--font-weight-medium);
+      line-height: 1;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

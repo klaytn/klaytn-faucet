@@ -1,0 +1,129 @@
+.form {
+  font-size: 0.875rem;
+  label {
+    margin: var(--space-0x) var(--space-0x) var(--space-2x);
+    width: 100%;
+    color: var(--blue-800);
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 680px;
+  }
+  input {
+    display: block;
+    font-size: 14px;
+    font-family: var(--font-family-text);
+    border: 1px solid var(--gray-300);
+    width: 100%;
+    color: rgb(12, 22, 44);
+    background-color: var(--white);
+    padding: var(--space-2x) var(--space-2x) var(--space-2x) var(--space-4x);
+    background-position: left 8px top 50%;
+    background-repeat: no-repeat;
+    appearance: none;
+    line-height: 22px;
+    border-radius: var(--space-1x);
+    margin: var(--space-0x);
+    margin-bottom: var(--space-6x);
+    max-width: 680px;
+    outline: 0px;
+  }
+  .error {
+    margin: -16px var(--space-0x) var(--space-6x);
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray-600);
+    font-weight: var(--font-weight-medium);
+    max-width: 680px;
+    img {
+      margin: var(--space-0x) var(--space-1x) var(--space-0x) var(--space-0x);
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      width: 16px;
+      vertical-align: text-bottom;
+    }
+  }
+  .captcha {
+    max-width: 680px;
+  }
+  .submit {
+    margin-top: var(--space-12x);
+    appearance: none;
+    border-radius: var(--space-1x);
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    font-family: var(--font-family-text);
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 20px;
+    padding: var(--space-2x) var(--space-6x);
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    color: var(--white);
+    background-color: var(--blue-600);
+    border-color: var(--blue-600);
+    margin-bottom: var(--space-6x);
+    cursor: pointer;
+    &:hover {
+      border-color: var(--gray-900);
+      background-color: var(--blue-800);
+    }
+    &:disabled {
+      border-color: var(--gray-200);
+      background-color: var(--gray-200);
+      color: var(--gray-500);
+      cursor: not-allowed;
+    }
+  }
+}
+.modalContent {
+  width: 310px;
+  text-align: center;
+  .modalTitle {
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.29;
+    font-weight: var(--font-weight-bold);
+    color: var(--blue-800);
+    margin: 0px 0px var(--space-2x);
+    text-align: left;
+  }
+  .modalDescription {
+    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.29;
+    color: var(--gray-500);
+    margin-bottom: var(--space-5x);
+    text-align: left;
+  }
+  .closeButton {
+    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.29;
+    display: inline-block;
+    border: 0;
+    background-color: var(--green-300);
+    color: var(--white);
+    cursor: pointer;
+    padding: 0 var(--space-5x);
+    min-width: 140px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgb(106 209 186 / 25%);
+    transition: background 0.3s;
+    margin: auto;
+    &:hover,
+    &:active {
+      background-color: var(--green-400);
+    }
+  }
+}

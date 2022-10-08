@@ -1,0 +1,10 @@
+.main {
+  margin-bottom: var(--space-16x);
+  .box {
+    margin-top: var(--space-8x);
+    padding: var(--space-6x);
+    border: 1px solid var(--gray-200);
+    background-color: var(--white);
+    border-radius: var(--space-1x);
+  }
+}
