@@ -13,6 +13,7 @@ import CloseIcon from '../resources/icons/close.svg';
 import MetaMaskIcon from '../resources/images/metamask.svg';
 import KaiKasIcon from '../resources/images/kaikas.png';
 import KlaytnIcon from '../resources/images/klaytn.png';
+import LogoIcon from '../resources/images/logo.png';
 
 
 
@@ -32,4 +33,5 @@ export {
     MetaMaskIcon,
     KaiKasIcon,
     KlaytnIcon,
+    LogoIcon,
 }

@@ -11,13 +11,32 @@
     .logo {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      font-size: 1.25rem;
-      color: var(--blue-600);
+      align-items: flex-end;
+      font-size: 2.125rem;
+      color: var(--black);
       font-weight: var(--font-weight-medium);
       line-height: 1;
+      vertical-align: baseline;
       img {
-        margin-right: 10px;
+        max-height: 40px;
+        max-width: 150px;
+        width: auto;
+        height: auto;
+      }
+      span {
+        margin-left: 15px;
+        padding-left: 15px;
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          content: "";
+          width: 1px;
+          height: 1.5rem;
+          background-color: #dfdfdf;
+          transform: translateY(-50%);
+        }
       }
     }
     .right {

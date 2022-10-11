@@ -10,6 +10,7 @@
     font-weight: var(--font-weight-medium);
     cursor: pointer;
     height: 40px;
+    box-sizing: border-box;
     &:hover {
       color: var(--blue-800);
       border-color: var(--blue-800);
