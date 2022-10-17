@@ -17,9 +17,7 @@ In order to compile and run everything you will need:
 Install the app with yarn (recommended) or npm:
 
 ### `yarn install`
-
 or
-
 ### `npm install`
 
 Then copy file env.production.example and rename it to .env:
