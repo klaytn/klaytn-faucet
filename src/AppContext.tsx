@@ -144,7 +144,7 @@ export const AppProvider: React.FC<PropsWithChildren> = (props) => {
   const handleDisconnect = useCallback(() => {
     StorageUltis.clear();
     setAddress("");
-    setChainId("");
+    setChainId(SUPPORTED_NETWORKS[0].chainID);
     setWallet("");
     setIsInstall(true);
   }, [])
