@@ -8,8 +8,9 @@ Klaytn network faucets provide KLAY to legitimate developers willing to deploy a
 
 In order to compile and run everything you will need:
 
-- Node installed (^[16.16.0](https://nodejs.org/en/blog/release/v16.16.0/) recommended)
+- Node installed (^[v16.16.0](https://nodejs.org/en/blog/release/v16.16.0/) recommended)
 - [HCaptcha SITE_KEY](https://dashboard.hcaptcha.com/sites?page=1)
+
 
 ## Install and Setup
 
@@ -27,11 +28,12 @@ Then copy file env.production.example and rename it to .env:
 
 Update API_BASE_URL with your Api url and HCAPTCHA_SITE_KEY with your Hcaptcha site key.
 
-### Setup Hcaptcha site key
+### Setup Hcaptcha
 
 Add your domain to the allowed domains list on the Hcaptcha dashboard.
 
 Hcaptcha only works with public addresses, so you need to make your IP address public or use support tools.
+
 
 ## Start with localhost
 
@@ -45,9 +47,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 To use HCaptcha you need to make your IP address public or use a tool that tunnels between your localhost and the internet.
 
-- eg: [ngrok](https://ngrok.com).
+- Eg: [ngrok](https://ngrok.com).
 
-## Build for production
+
+## Build into production
 
 ### `npm run build`
 
