@@ -16,21 +16,15 @@ In order to compile and run everything you will need:
 
 Install the app with yarn (recommended) or npm:
 
-### Install package
-
-Use: 
-#### `yarn install`
+### `yarn install`
 or
-#### `npm install`
-to install the package.
+### `npm install`
 
-### Environment variable setting 
+Then copy file env.production.example and rename it to .env:
 
-Copy file env.production.example and rename it to .env.
+### Update `API_BASE_URL` and `HCAPTCHA_SITE_KEY`
 
-#### Update `API_BASE_URL` and `HCAPTCHA_SITE_KEY` environment variable
-
-Update `API_BASE_URL` with api url and `HCAPTCHA_SITE_KEY` with your Hcaptcha site key.
+Update API_BASE_URL with your Api url and HCAPTCHA_SITE_KEY with your Hcaptcha site key.
 
 ### Setup Hcaptcha
 
@@ -43,7 +37,7 @@ Hcaptcha only works with public addresses, so you need to make your IP address p
 
 Runs the app in the development mode.
 
-#### `npm start`
+### `npm start`
 
 The application will run by default on port 3000. If you want to run the application on another port, please change the PORT in the .env file.
 
@@ -56,7 +50,7 @@ To use HCaptcha you need to make your IP address public or use a tool that tunne
 
 ## Build into production
 
-#### `npm run build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
