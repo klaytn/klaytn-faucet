@@ -1,3 +1,7 @@
+# <div align="center">‼️ This repository is deprecated and no longer used ‼️</div>
+
+---
+
 # Klaytn Faucet
 
 KLAY have no market value, they can be obtained for free and are meant for testing purposes only.
